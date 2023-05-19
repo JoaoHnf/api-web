@@ -6,7 +6,7 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const secretKey = '123456';
 
-// Configurações da conexão com o banco de dados
+
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -23,7 +23,7 @@ app.use(cors());
 // Configura o servidor para usar requisições no formato JSON
 app.use(express.json());
 
-// Acesso a raiz da API
+
 app.get('/', (req, res) => {
     res.send('Minha  API de Programador Web');
   });
